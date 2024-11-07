@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WorkSans-bold';
+    src: url('../assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'WorkSans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: hsl(275, 100%, 97%) url('../assets/images/background-pattern-mobile.svg') top left no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.11);
+    min-width: 300px;
+    max-width: 340px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+section {
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    padding: 20px 0 20px;
+}
+
+section.first {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    padding: 10px 0 10px;
+}
+
+.first h1 {
+    color: hsl(292, 42%, 14%);
+    font-family: 'WorkSans-bold', sans-serif;
+    font-size: 36px;
+    padding-left:20px;
+}
+
+div {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+div:hover {
+    cursor: pointer;
+}
+
+h2 {
+    color: hsl(292, 42%, 14%);
+    font-family: 'WorkSans-bold', sans-serif;
+    font-size: 16px;
+    flex-basis: 75%;
+}
+
+h2:hover{
+    color: hsl(292, 16%, 49%);
+}
+
+p {
+    display: none;
+    color: hsl(292, 16%, 49%);
+    font-size: 16px;
+    margin: 20px 0 0;
+}
+
+p#paragraph1 {
+    display: block;
+}
+
+section.fifth {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+footer {
+    color: hsl(0, 0%, 0%);
+    font-size: 13px;
+    line-height: 18px;
+    margin: 30px 0 20px;
+    max-width: 235px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: hsl(292, 42%, 14%);
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: hsl(275, 100%, 97%) url('../assets/images/background-pattern-desktop.svg') top left no-repeat;
+    }
+
+    main {
+        min-width: 600px;
+        padding: 30px;
+    }
+
+    .first h1 {
+        font-size: 46px;
+    }
+}
